@@ -27,3 +27,23 @@ cp ../rails-react-learning/.env .
 ```
 
 configure o `database.yml` para o nome do banco correto
+
+### Boot
+
+- Inicie o docker-compose
+
+`docker-compose up --build`
+
+- Instale e configure o DB Rails
+
+```sh
+rails db:create
+
+rails db:migrate
+```
+
+- Inicialize o server com _overmind_
+
+```sh
+overmind start
+```
