@@ -28,6 +28,12 @@ cp ../rails-react-learning/.env .
 
 configure o `database.yml` para o nome do banco correto
 
+- Instale as gens no banco
+
+```sh
+bundle install
+```
+
 ### Boot
 
 - Inicie o docker-compose
@@ -46,4 +52,21 @@ rails db:migrate
 
 ```sh
 overmind start
+```
+
+# Application
+
+- configure as rotas no _routs.rb_
+
+Na raiz do projeto execute:
+
+- Criar um novo Controller
+
+`rails g controller controller_name`
+
+- Criar um novo Model
+
+```sh
+# cria um novo Model com um título contendo um texto
+rails g model ModelName title:string content:text
 ```
