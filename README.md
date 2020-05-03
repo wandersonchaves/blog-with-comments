@@ -1,24 +1,29 @@
-# README
+# BLOG WITH COMMENTS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Build your first Rails app - blog with comments (tutorial)](https://www.youtube.com/watch?v=wbZ6yrVxScM)
 
-Things you may want to cover:
+### Installation
 
-* Ruby version
+- Criar nova aplicação rails
 
-* System dependencies
+```sh
+rails new blog-with-comments --database=postgresql --skip-test --skip-action-cable --skip-turbo-links
+```
 
-* Configuration
+- Copiar arquivos de configuração
+  - docker-compose
+  - database.yml
+  - Procfile.dev
+  - .env
 
-* Database creation
+```sh
+cp ../rails-react-learning/docker-compose.yml .
 
-* Database initialization
+cp ../rails-react-learning/config/database.yml config/database.yml
 
-* How to run the test suite
+cp ../rails-react-learning/Procfile.dev .
 
-* Services (job queues, cache servers, search engines, etc.)
+cp ../rails-react-learning/.env .
+```
 
-* Deployment instructions
-
-* ...
+configure o `database.yml` para o nome do banco correto
