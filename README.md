@@ -17,13 +17,13 @@ rails new blog-with-comments --database=postgresql --skip-test --skip-action-cab
   - .env
 
 ```sh
-cp ../rails-react-learning/docker-compose.yml .
+cp ../other_project/docker-compose.yml .
 
-cp ../rails-react-learning/config/database.yml config/database.yml
+cp ../other_project/config/database.yml config/database.yml
 
-cp ../rails-react-learning/Procfile.dev .
+cp ../other_project/Procfile.dev .
 
-cp ../rails-react-learning/.env .
+cp ../other_project/.env .
 ```
 
 configure o `database.yml` para o nome do banco correto
@@ -70,3 +70,7 @@ Na raiz do projeto execute:
 # cria um novo Model com um título contendo um texto
 rails g model ModelName title:string content:text
 ```
+
+- Criar uma nova tabela no migrations
+
+  `rails g migration MigrationName`
